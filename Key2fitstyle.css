@@ -1,0 +1,699 @@
+/* Basic Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "EB Garamond", serif;
+  font-family: "Lora", serif;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "EB Garamond", serif;
+  font-weight: Bold;
+  color: #900c3f;
+  letter-spacing: 1px;
+}
+
+.underline {
+  width: 150px;
+  border: 3px solid #900c3f;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.lead {
+  font-family: "Lora", serif !important;
+  font-size: 22px;
+  margin: 15px 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.icon {
+  color: #ff5733;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #900c3f;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #900c3f;
+  font-weight: bold;
+  font-family: "Lora", serif;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #fff;
+  font-family: "Lora", serif;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "Lora", serif;
+  letter-spacing: 1px;
+}
+
+h5 span {
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "Lora", serif;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "Lora", serif;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 1px
+}
+
+em {
+  font-weight: bold;
+  color: #900c3f;
+  font-size: 26px;
+  letter-spacing: 1px
+}
+
+.thanks {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Lora", serif;
+  letter-spacing: 1px
+}
+
+/* End Basic Setup */
+
+/* NavBar */
+.navbar {
+  padding: 0.7rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.5s ease 0s;
+}
+
+.svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.8rem;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #ff5733;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.5) !important;
+  transition: background-color 1s ease 0s;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.4s;
+}
+
+/* Transformation Menu in X */
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+/* End of NavBar */
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 50%;
+  min-height: 50%;
+}
+/* End of Header */
+
+/* Mission */
+#mission {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+/* End Mission */
+
+/* About */
+#about {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+/* Animation Photo and Text */
+.fromLeft {
+  animation-name: fromLeft;
+  animation-duration: 3s;
+}
+
+.fromRight {
+  animation-name: fromRight;
+  animation-duration: 3s;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* End of About */
+
+/* Goal*/
+#goal {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  margin-bottom: 60px;
+}
+
+.card-goal-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Leabefore.jpeg) no-repeat center center / cover;
+  box-shadow: 7px 18px 50px #555;
+  max-width: 400px;
+}
+
+.card-goal-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Leaafter.jpeg) no-repeat center center / cover;
+  box-shadow: 7px 18px 50px #555;
+  max-width: 400px;
+}
+
+.card-goal-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Arisbefore.jpeg) no-repeat center center / cover;
+  box-shadow: 7px 18px 50px #555;
+  max-width: 400px;
+}
+
+.card-goal-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Arisafter.jpeg) no-repeat center center / cover;
+  box-shadow: 7px 18px 50px #555;
+  max-width: 400px;
+}
+
+.card-goal-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Emanuelebefore.jpeg) no-repeat center center / cover;
+  box-shadow: 7px 18px 50px #555;
+  max-width: 400px;
+}
+
+.card-goal-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Emanueleafter.jpeg) no-repeat center center / cover;
+  box-shadow: 7px 18px 50px #555;
+  max-width: 400px;
+}
+
+.card-goal-body {
+  width: auto;
+  height: 400px;
+}
+
+.moveFromLeft {
+  animation-name: moveFromLeft;
+  animation-duration: 6s;
+}
+
+.moveFromRight {
+  animation-name: moveFromRight;
+  animation-duration: 6s;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* End of Goal */
+
+/* Nutrition */
+#nutrition {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/pexels-maarten-van-den-heuvel-2284166.jpg) no-repeat center
+      center / cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+#nutrition:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.modal-title {
+  color: #511845;
+  
+}
+
+.table-active h3 {
+  font-size: 18px;
+}
+
+.table-active h2 {
+  font-size: 20px;
+  color: #f46f30;
+}
+
+.nutr {
+  color: #fff;
+}
+
+.btn {
+  background-color: #f46f30;
+  color: #fff;
+  border: none;
+}
+
+.btn-circle.btn-sm {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  font-size: 8px;
+  text-align: center;
+}
+.btn-circle.btn-md {
+  width: 50px;
+  height: 50px;
+  padding: 7px 10px;
+  border-radius: 25px;
+  font-size: 10px;
+  text-align: center;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 12px;
+  text-align: center;
+}
+/* End Nutrition */
+
+/* Testimonials */
+.testimonials {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/LOGOTYPE.jpg) no-repeat center center / cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 3rem;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.testimonials:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.carousel-item img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+}
+
+.name {
+  color: #900c3f;
+}
+/* End of Testimonials */
+
+/* CookBook */
+#recipe {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.cards-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  width: auto;
+  height: 250px;
+  border-radius: 25px;
+}
+
+.cards-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/rice-salad-with-roasted-peppers-and-onions-5-Edit.jpg)
+      no-repeat center center / cover;
+}
+.cards-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Cod-Fish-Cakes-sq.jpg) no-repeat center center / cover;
+}
+.cards-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/timthumb.gif) no-repeat center center / cover;
+}
+
+.cards-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Spanish-Paella.jpg) no-repeat center center / cover;
+}
+
+.cards-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2013__02__carrot-ginger-soup-horiz-b-1800-dd69c8e29d2a4a78bc0f4626536dcd06.jpg)
+      no-repeat center center / cover;
+}
+
+.cards-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/img86001.768x512.jpg) no-repeat center center / cover;
+}
+
+.cards-7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/aquapazza_56822.jpg) no-repeat center center / cover;
+}
+
+.cards-8 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Spiced-hot-fruit-bake-6.jpg) no-repeat center center / cover;
+}
+
+.cards-9 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/Best_Ever_Oatmeal_Raisin_Cookies_Featured.jpg) no-repeat center
+      center / cover;
+}
+
+.cards-10 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../image/pexels-cottonbro-4547572.jpg) no-repeat center center / cover;
+}
+
+.btn {
+  background: #ff5733;
+  width: 100px;
+  border-radius: 25px;
+  box-shadow: 5px 8px 18px #000;
+  transition: all 0.2s;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.btn:hover {
+  background: #f9793d;
+  transform: translateY(-2px);
+}
+
+.btn0 {
+  background: #ff5733;
+  width: 100px;
+  border-radius: 25px;
+  box-shadow: 5px 8px 18px #000;
+  transition: all 0.2s;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn0:hover {
+  background: #f9793d;
+  transform: translateY(-2px);
+}
+
+span {
+  color: #000;
+}
+
+.modal-body1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/rice-salad-with-roasted-peppers-and-onions-5-Edit.jpg)
+      no-repeat center center / cover;
+}
+
+.modal-body2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/Cod-Fish-Cakes-sq.jpg) no-repeat center center / cover;
+  /* box-shadow: 7px 18px 50px #555; */
+}
+.modal-body3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/timthumb.gif) no-repeat center center / cover;
+  /* box-shadow: 7px 18px 50px #555; */
+}
+
+.modal-body4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/Spanish-Paella.jpg) no-repeat center center / cover;
+  /* box-shadow: 7px 18px 50px #555; */
+}
+
+.modal-body5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2013__02__carrot-ginger-soup-horiz-b-1800-dd69c8e29d2a4a78bc0f4626536dcd06.jpg)
+      no-repeat center center / cover;
+  /* box-shadow: 7px 18px 50px #555; */
+}
+
+.modal-body6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/img86001.768x512.jpg) no-repeat center center / cover;
+  /* box-shadow: 7px 18px 50px #555; */
+}
+
+.modal-body7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/aquapazza_56822.jpg) no-repeat center center / cover;
+  /* box-shadow: 7px 18px 50px #555; */
+}
+
+.modal-body8 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/Spiced-hot-fruit-bake-6.jpg) no-repeat center center / cover;
+  /* box-shadow: 7px 18px 50px #555; */
+}
+
+.modal-body9 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/Best_Ever_Oatmeal_Raisin_Cookies_Featured.jpg) no-repeat center
+      center / cover;
+  /* box-shadow: 7px 18px 50px #555; */
+}
+
+.modal-body10 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../image/pexels-cottonbro-4547572.jpg) no-repeat center center / cover;
+  /* box-shadow: 7px 18px 50px #555; */
+}
+
+thead {
+  font-weight: bold;
+  font-family: "EB Garamond", serif;
+  color: #fff;
+}
+
+.table-active h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-active h2 {
+  font-size: 18px;
+  color: #ff5733;
+}
+
+.rec1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "EB Garamond", serif;
+}
+/* End of CookBook */
+
+/* FAQ Accordion */
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding-bottom: 60px;
+}
+
+.accordion-item {
+  background-color: #511845;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-item-header.active::after {
+  transform: rotate(45deg);
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+/* End of FAQ Accordion*/
+
+/* Contact */
+#contact {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.fa-facebook-square,
+.fa-instagram-square,
+.fa-twitter-square,
+.fa-youtube-square {
+  transition: color 0.2s;
+}
+.social-links a:link,
+.social-links a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+  transform: color 0.2s;
+}
+
+.extra {
+  color: #900c3f;
+}
+/* End of Contact */

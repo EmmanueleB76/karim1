@@ -1,0 +1,368 @@
+/* Basic Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "EB Garamond", serif;
+  font-family: "Lora", serif;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "EB Garamond", serif;
+  font-weight: Bold;
+  color: #900c3f;
+  letter-spacing: 1px;
+}
+
+.underline {
+  width: 150px;
+  border: 3px solid #900c3f;
+  margin: auto;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 28px;
+  color: #900c3f;
+  font-weight: bold;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+h5 span {
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Lora", serif;
+}
+/* End Basic Setup */
+
+/* NavBar */
+.navbar {
+  padding: 0.7rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.5s ease 0s;
+}
+
+.svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.8rem;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #ff5733;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.5) !important;
+  transition: background-color 1s ease 0s;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.4s;
+}
+
+/* Transformation Menu in X */
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+/* End of NavBar */
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 50%;
+  min-height: 50%;
+}
+/* End of Header */
+
+/*Nutrition*/
+#nutrition {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+/* Animation Photo and Text */
+.fromLeft {
+  animation-name: fromLeft;
+  animation-duration: 3s;
+}
+
+.fromRight {
+  animation-name: fromRight;
+  animation-duration: 3s;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.spotlight {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.spotlight > * {
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  -moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+}
+
+.spotlight > * {
+  width: 50%;
+}
+
+.spotlight p:last-child {
+  margin: 0;
+}
+
+.spotlight .inner {
+  padding: 3rem;
+}
+
+.spotlight .image img {
+  width: 450px;
+  height: 300px;
+}
+
+.spotlight.alt {
+  background: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.25);
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: right;
+}
+
+.spotlight.alt > * {
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  -moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+}
+
+.spotlight.alt h3 {
+  color: #fff;
+}
+
+.spotlight.alt .image {
+  -moz-order: 2;
+  -webkit-order: 2;
+  -ms-order: 2;
+  order: 2;
+}
+
+@media screen and (max-width: 1280px) {
+  .spotlight .inner {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .spotlight {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .spotlight > * {
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+  }
+
+  .spotlight > * {
+    width: 100%;
+  }
+
+  .spotlight.alt {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .spotlight.alt > * {
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+  }
+
+  .spotlight.alt .image {
+    -moz-order: 0;
+    -webkit-order: 0;
+    -ms-order: 0;
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .spotlight .inner {
+    padding: 2rem;
+  }
+}
+/* End of Nutrition */
+
+/* Contact */
+#contact {
+  background-color: rgba(0, 0, 0, 0.176);
+}
+
+.fa-facebook-square,
+.fa-instagram-square,
+.fa-twitter-square,
+.fa-youtube-square {
+  transition: color 0.2s;
+}
+
+.social-links a:link,
+.social-links a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+  transform: color 0.2s;
+}
+
+.extra {
+  color: #900c3f;
+}
+/* End of Contact */
